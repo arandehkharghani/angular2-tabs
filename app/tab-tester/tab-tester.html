@@ -1,0 +1,29 @@
+<h2>Tab Tester</h2>
+<label><input #mediaSize type="checkbox" checked (change)="isLargeDevice = mediaSize.checked"/> is large device?</label>
+
+<tabs [largeDevice]="isLargeDevice">
+
+    <tab tabTitle="Tab 1" tabGlyphIcon="glyphicon glyphicon-cog">
+
+        Tab 1 ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu posuere tortor. Phasellus consectetur aliquet risus,
+        in lacinia erat ullamcorper a. Suspendisse molestie porta metus, at cursus elit. Quisque et neque nec velit tincidunt
+        fringilla. <button class='btn btn-primary js-alert-test'>Test Event Maintained</button>
+
+    </tab>
+
+    <tab [tabTitle]="someExpression" tabGlyphIcon="glyphicon glyphicon-headphones">
+
+        Tab 2 ... Phasellus consectetur aliquet risus, in lacinia erat ullamcorper a. Suspendisse molestie porta metus, at cursus
+        elit. Quisque et neque nec velit tincidunt fringilla. Morbi eget nisi molestie, egestas turpis non, pharetra orci.
+        Donec mattis sem ipsum, eu dapibus lacus rutrum in. Fusce blandit mi leo, non feugiat nunc tempus vitae.
+
+    </tab>
+
+    <tab tabTitle="Tab 3" tabGlyphIcon="glyphicon glyphicon-folder-open">
+          
+        Tab 3 ... Quisque et neque nec velit tincidunt fringilla. Morbi eget nisi molestie, egestas turpis non, pharetra orci. Donec
+        mattis sem ipsum, eu dapibus lacus rutrum in. Fusce blandit mi leo, non feugiat nunc tempus vitae. Mauris hendrerit,
+        leo sit amet mollis bibendum, lacus augue auctor turpis, sed placerat augue libero quis massa.
+        
+    </tab>    
+</tabs>
