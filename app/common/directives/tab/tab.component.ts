@@ -14,7 +14,7 @@ import {Component, OnInit, Input} from 'angular2/core';
           </div>
             
           <div [id]="id" [hidden]="largeDevice && !isActive" [ngClass]="{'panel-collapse collapse in':!largeDevice,'tab-pane':largeDevice, 'active':isActive}"
-           [attr.role]="getRole()" [attr.aria-labelledby]="headingId">
+           [attr.role]="role" [attr.aria-labelledby]="headingId">
             <div [class.panel-body]="!largeDevice">
               <ng-content></ng-content>
             </div>     
@@ -34,7 +34,7 @@ class TabComponent {
   constructor() {
   }
   
-  getRole():string{
+  get role():string{
     let role:string;
     if (this.largeDevice){
       role = 'tabpanel';
