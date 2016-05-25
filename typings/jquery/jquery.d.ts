@@ -3219,8 +3219,8 @@ interface JQuery {
 interface JQuery {
     chosen(options?:any):JQuery;
 }
-
 declare module "jquery" {
-    export = JQuery;
+    export = $;
 }
 declare var jQuery: JQueryStatic;
+declare var $: JQueryStatic;
