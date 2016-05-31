@@ -11,7 +11,7 @@ import { AppSettings, APP_SETTINGS } from '../app-settings';
 
 class TabTesterComponent implements OnInit {
         
-  isLargeDevice: boolean;
+  isLargeDevice: boolean = true;
   someExpression = 'Tab 2';
   constructor(@Inject(APP_SETTINGS) private appSettings: AppSettings) {        
   }
